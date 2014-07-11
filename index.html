@@ -134,7 +134,10 @@
                         var usepos_lon = position.coords.longitude;
 
                         var user_loc_title = prompt('Enter Location Name');
-                        localStorage.curuserpos += usepos_lat + ',' + usepos_lon + ',' + user_loc_title + '##*##';
+                        if(jQuery.trim(user_loc_title) != '')
+                        {
+                            localStorage.curuserpos += usepos_lat + ',' + usepos_lon + ',' + user_loc_title + '##*##';
+                        }
 
                     }, function() {
                         handleNoGeolocation(true);
