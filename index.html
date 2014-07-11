@@ -164,13 +164,13 @@
                     if (jQuery.trim(details) != '')
                     {
                         loc_html += '<div class="loclist">\n\
-        <div class="title">' + details[2] + '</div>\n\
+        <div class="title">Title : ' + details[2] + '</div>\n\
 <div class="options">\n\
 <a class="view_on_map" href="javascript:void(0);" data-loc-title="' + details[2] + '" data-loc-lat="' + details[0] + '" data-loc-lon="' + details[1] + '" onclick="viewLocationOnMap(this)">View on Map</a>&nbsp;\n\
 <a class="get_direction" href="javascript:void(0);" data-loc-title="' + details[2] + '" data-loc-lat="' + details[0] + '" data-loc-lon="' + details[1] + '" onclick="getDirectionOnMap(this)">Get Direction</a>\n\
 </div>\n\
 </div>';
-                        loc_html += '<div style="clear:both;"></div>';
+                        loc_html += '<div style="clear:both;height:20px;"></div>';
                     }
 
                 }

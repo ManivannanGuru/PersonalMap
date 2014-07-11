@@ -24,7 +24,9 @@
 }
 
 .user_saved_location .result_loc{
-    padding:20px;
+    height: 100%;
+    overflow: scroll;
+    padding: 20px;
 }
 
 .user_saved_location .result_loc .title{
